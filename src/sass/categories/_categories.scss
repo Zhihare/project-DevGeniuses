@@ -114,7 +114,19 @@
 	margin-bottom: 80px;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
 	gap: 40px;
+}
 
+@media only screen and (min-width: 768px) {
+	.categories-list-book {
+		row-gap: 40px;
+		column-gap: 25px;
+	}
+}
+
+@media only screen and (min-width: 1400px) {
+	.categories-list-book {
+		row-gap: 40px;
+		column-gap: 24px;
+	}
 }
