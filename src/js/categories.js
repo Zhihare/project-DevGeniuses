@@ -1,6 +1,6 @@
 import axios from "axios";
 import { fetchBooksHomePage } from "./home-page";
-const refs = {
+export const refs = {
 	select: document.querySelector(".categories"),
 	homePage: document.querySelector('.home-page'),
 	homePageTitle: document.querySelector('.title-section'),
@@ -65,10 +65,10 @@ function create(arr) {
 }
 
 
-function createBooksCard(arr) {
+export function createBooksCard(arr) {
 
 	const createCard = arr.map(
-		({ book_image, author, title }) =>
+		({ book_image, _id, author, title }) =>
 			`
 			
                   <div class="categories-direction">
