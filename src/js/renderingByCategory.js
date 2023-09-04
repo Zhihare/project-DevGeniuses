@@ -69,8 +69,7 @@ export default function renderingByCategory(e) {
 
   galleryRef.insertAdjacentHTML(
     'beforeend',
-    //   category.split(" ").slice(category.split(" ").length - 1, category.split(" ").length).join(" ");
-    // category.split(" ").slice(0, category.split(" ").length - 1).join(" ");
+
     `<h2 class="gallery-title">${e.target.innerHTML
       .trim()
       .split(' ').slice(0, e.target.innerHTML
